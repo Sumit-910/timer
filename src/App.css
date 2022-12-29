@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  /* background: #3294d1; */
+  background-image: -webkit-linear-gradient(top, #0894f1, #d098f0);
+  background-image: -moz-linear-gradient(top, #0894f1, #d098f0);
+  background-image: -ms-linear-gradient(top, #0894f1, #d098f0);
+  background-image: -o-linear-gradient(top, #0894f1, #d098f0);
+  background-image: linear-gradient(to bottom, #0894f1, #d098f0);
+  font-size: 100%;
+  color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.timerContainer{
+  /* add background image */
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer{
+  background-color: rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 7em;
+  padding-top: 2em;
+  width: 100%;
+  height: 100%;
+}
+.first{
+  text-align: center;
+}
+h2{
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.second{
+  border: 1px solid #fff;
+  border-radius: 3%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin-top: 3em;
+  padding: 3em;
+  text-align: center;
+  font-size: 2em;
+}
+.entry{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3em;
+}
+.entry p{
+  padding: 0 2em;
+}
+input{
+  width: 5em;
 }
 
-.App-link {
-  color: #61dafb;
+.btnc{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.Btn {
+  background: #d098f0;
+  background-image: -webkit-linear-gradient(top, #d098f0, #3294d1);
+  background-image: -moz-linear-gradient(top, #d098f0, #3294d1);
+  background-image: -ms-linear-gradient(top, #d098f0, #3294d1);
+  background-image: -o-linear-gradient(top, #d098f0, #3294d1);
+  background-image: linear-gradient(to bottom, #d098f0, #3294d1);
+  border-radius: 10px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.Btn:hover {
+  background: #3294d1;
+  background-image: -webkit-linear-gradient(top, #3294d1, #d098f0);
+  background-image: -moz-linear-gradient(top, #3294d1, #d098f0);
+  background-image: -ms-linear-gradient(top, #3294d1, #d098f0);
+  background-image: -o-linear-gradient(top, #3294d1, #d098f0);
+  background-image: linear-gradient(to bottom, #3294d1, #d098f0);
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .timer div:last-child{
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
   }
 }
